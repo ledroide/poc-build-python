@@ -1,0 +1,14 @@
+language: python
+sudo: required
+python: 2.7
+services: docker
+branches:
+  only:
+    - master
+install: 
+  - pip install -r requirements.txt
+script:
+  # Tests Python (pytest installed by default)
+  #- pytest
+  # (Makefile) generics actions
+  - make default
