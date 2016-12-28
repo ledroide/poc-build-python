@@ -12,4 +12,4 @@ api = falcon.API()
 api.add_route('/', Home())
 
 # 
-serve(api, host='127.0.0.1', port=8080)
+serve(api, host='*', port=8080)
