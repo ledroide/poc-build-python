@@ -6,7 +6,7 @@ branches:
   only:
     - master
 install: 
-  #- pip install -r requirements.txt
+  - pip install -r myproject/requirements.txt
 before_script:
   # Tests Python (pytest installed by default)
   - pytest
