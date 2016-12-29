@@ -1,4 +1,4 @@
-FROM python:2-alpine
+FROM python:2-onbuild
 COPY /myproject /app
 EXPOSE 8080
 ENTRYPOINT ["python", "/app/main.py"]
