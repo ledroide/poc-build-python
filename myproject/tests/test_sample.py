@@ -1,5 +1,5 @@
-def inc(x):
+def increment(x):
     return x + 1
 
 def test_answer():
-    assert inc(1) == 2
+    assert increment(1) == 2
