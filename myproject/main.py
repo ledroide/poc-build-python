@@ -21,7 +21,7 @@ class Home:
     def on_get(self, req, resp):
         """Handles GET requests"""
         resp.status = falcon.HTTP_200
-        resp.body = "PLATFORM - API Python 2.*"
+        resp.body = "PLATFORM - API Python " + str(sys.version_info.major) + "." + str(sys.version_info.minor)
         # logging test
         logger.info('{0} {1} {2} {3} {4}'.format(req.method, req.relative_uri, req.remote_addr, resp.status[:3], req.user_agent))
         logger.warning('{0} {1} {2}'.format('warning', resp.status[:15], resp.body[:30]))
