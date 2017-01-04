@@ -2,6 +2,7 @@ FROM python:alpine
 # update
 RUN apk add --update python3 py-pip
 # install dependencies
+COPY /requirements.txt /
 RUN pip3 install -r requirements.txt
 # bundle app
 COPY /myproject /app
