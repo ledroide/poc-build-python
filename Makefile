@@ -1,5 +1,5 @@
 SHELL:=/bin/bash
-GIT_SHA ?= $(shell git rev-parse HEAD)
+GIT_SHA ?= $(shell git rev-parse HEAD | cut -c 1-8)
 
 .PHONY: docker.build
 docker.build:
