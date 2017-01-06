@@ -15,7 +15,7 @@ docker: docker.build
 	docker tag $(TRAVIS_REPO_SLUG):$(GIT_SHA) $(REPOSITORY_NAME):$(SEMVER)-$(TINYSHA)
 	docker push $(REPOSITORY_NAME):latest
 	docker push $(REPOSITORY_NAME):build-$(GIT_SHA)
-	docker push $(REPOSITORY_NAME):$(SEMVER)+$(TINYSHA)
+	docker push $(REPOSITORY_NAME):$(SEMVER)-$(TINYSHA)
 
 .PHONY: default
 default: docker
